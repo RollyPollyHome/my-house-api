@@ -28,6 +28,13 @@ namespace MyHouse.API
         {
             services.AddControllers();
 
+            services.AddApiVersioning(options =>
+            {
+                options.ReportApiVersions = true;
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.DefaultApiVersion = new ApiVersion(1, 0);
+            });
+
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
             {
