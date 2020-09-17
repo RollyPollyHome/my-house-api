@@ -9,7 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E760707E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHouse.API", "src\MyHouse.API\MyHouse.API.csproj", "{4FB5949B-CCFC-4D60-B80B-B069836BBF25}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyHouse.Cqrs", "src\MyHouse.Cqrs\MyHouse.Cqrs.csproj", "{94344439-23E8-4FCB-B209-3E6FE4EF07BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyHouse.Cqrs", "src\MyHouse.Cqrs\MyHouse.Cqrs.csproj", "{94344439-23E8-4FCB-B209-3E6FE4EF07BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{03710743-AFC9-4EED-B3A1-9DBFB91F349C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
