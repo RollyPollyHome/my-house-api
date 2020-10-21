@@ -10,5 +10,11 @@ namespace MyHouse.Tests.IntegrationTests.Api
             : base(fixture)
         {
         }
+
+        [Fact]
+        public void Test1()
+        {
+            Assert.True(false);
+        }
     }
 }
