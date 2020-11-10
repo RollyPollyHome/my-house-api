@@ -8,7 +8,6 @@ namespace MyHouse.Tests.IntegrationTests.Core
         public TestStartup(IConfiguration configuration)
             : base(configuration)
         {
-
         }
     }
 }

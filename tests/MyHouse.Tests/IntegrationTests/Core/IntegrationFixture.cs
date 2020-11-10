@@ -9,7 +9,9 @@ namespace MyHouse.Tests.IntegrationTests.Core
     {
         public IntegrationFixture()
         {
-            var builder = WebHost.CreateDefaultBuilder().UseEnvironment("Test").UseStartup<TestStartup>();
+            var builder = WebHost.CreateDefaultBuilder()
+                                 .UseEnvironment("Test")
+                                 .UseStartup<TestStartup>();
 
             Server = new TestServer(builder);
         }
