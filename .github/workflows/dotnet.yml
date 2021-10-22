@@ -19,8 +19,9 @@ jobs:
         run: dotnet restore
       - name: Build
         run: |
-          echo ${{secrerts.API_KEY}}
+          echo "${{secrerts.API_KEY}}"
           dotnet build --no-restore
+        
 #      - name: Test
 #          run: dotnet test --no-build --verbosity normal
 
