@@ -19,7 +19,7 @@ on:
   workflow_run:
     workflows: ["Build and Test"]
     types:
-      - complete
+      - completed
 
 jobs:
 
