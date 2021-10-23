@@ -26,7 +26,19 @@ jobs:
 #          name: build-artifact
 #          path: 'src/'
 
-  test:
+  integration_test:
+
+    needs: [ build ]
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Folders
+        run: ls
+      - name: Test
+        run: dotnet test --no-build --verbosity normal
+
+  unit_test:
 
     needs: [ build ]
     runs-on: ubuntu-latest
