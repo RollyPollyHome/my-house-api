@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: init-environment@v1
-      - name: Restore dependencies
-        run: dotnet restore
+      - uses: ./.github/actions/prepare-environment
+        with:
+          skd-version: 5.0.x
       - name: Build
         id: Build
         run: dotnet build --no-restore -c Release

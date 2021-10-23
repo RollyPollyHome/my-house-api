@@ -1,0 +1,18 @@
+﻿name: "Prepare environment."
+desccription: "Checkout and restore .NET Core project."
+
+inputs:
+  skd-version:
+    description: "Version of .NET Core SDK."
+    required: true
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v2
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+    - name: Restore dependencies
+        run: dotnet restore
+      with:
+        dotnet-version: ${{ inputs.skd-version }}
