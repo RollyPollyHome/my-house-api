@@ -1,5 +1,5 @@
 ﻿name: "Prepare environment."
-desccription: "Prepare .NET Core project."
+desccription: "Checkout and restore .NET Core project."
 
 inputs:
   skd-version:
@@ -9,6 +9,7 @@ inputs:
 runs:
   using: "composite"
   steps:
+    - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
     - name: Restore dependencies
