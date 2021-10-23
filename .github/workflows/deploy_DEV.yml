@@ -18,7 +18,7 @@ on:
   # Dependency to a forking workflow
   workflow_run:
     workflows: ["Build and Test"]
-    type:
+    types:
       - complete
 
 jobs:
