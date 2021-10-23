@@ -6,20 +6,18 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v2
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
       - name: Restore dependencies
         run: dotnet restore
-        with:
-          dotnet-version: ${{ inputs.skd-version }}
       - name: Build
-        id: Build
-        run: dotnet build --no-restore -c Release
+        run: dotnet build --no-restore
 
   test:
 
