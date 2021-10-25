@@ -10,21 +10,12 @@ on:
 
   # Manual trigger from the UI
   workflow_dispatch:
-    inputs:
-      message:
-        required: false
-        description: 'Build description'
+    branches: [ "*" ]
 
-  # Dependency to a forking workflow
-  workflow_run:
-    workflows: ["Build and Test"]
-    types:
-      - completed
 
 jobs:
 
   deploy:
-
     runs-on: ubuntu-latest
 
     steps:

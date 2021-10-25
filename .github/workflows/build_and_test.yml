@@ -4,12 +4,12 @@ on:
   push:
     branches: [ '*' ]
 
+env:
+  BUILD_CONFIGURATION: Release
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    env:
-      BUILD_CONFIGURATION: Release
 
     steps:
       - uses: actions/checkout@v2
