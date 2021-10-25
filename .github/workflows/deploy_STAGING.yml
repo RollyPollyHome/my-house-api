@@ -1,4 +1,4 @@
-name: Deploy DEV
+name: Deploy STAGING
 
 on:
   # Automatic trigger when pushing tags
@@ -16,7 +16,7 @@ jobs:
 
   deploy:
     runs-on: ubuntu-latest
-    environment: DEV
+    environment: STAGING
     steps:
       - uses: actions/checkout@v2
       - name: Folders
