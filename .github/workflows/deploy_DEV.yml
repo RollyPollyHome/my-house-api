@@ -10,7 +10,7 @@ on:
 
   # Manual trigger from the UI
   workflow_dispatch:
-    branches: [ "*" ]
+    branches: [ "*", "!master" ]
 
 
 jobs:
