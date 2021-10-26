@@ -20,6 +20,7 @@ namespace MyHouse.Tests.IntegrationTests.Core
 
         public void Dispose()
         {
+            // Dispose environment
         }
     }
 }
